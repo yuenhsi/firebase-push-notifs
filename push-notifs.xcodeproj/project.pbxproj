@@ -14,6 +14,7 @@
 		5AB6FE6E1E2813BF00BBD32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB6FE6D1E2813BF00BBD32F /* Assets.xcassets */; };
 		5AB6FE711E2813BF00BBD32F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB6FE6F1E2813BF00BBD32F /* LaunchScreen.storyboard */; };
 		5AB6FE791E28140A00BBD32F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB6FE781E28140A00BBD32F /* GoogleService-Info.plist */; };
+		69289EDF6B083F7DF2EAFE5B /* Pods_push_notifs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898C17F8B8C4A3B0AE0F287F /* Pods_push_notifs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		5AB6FE701E2813BF00BBD32F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB6FE721E2813BF00BBD32F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AB6FE781E28140A00BBD32F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		791643909AA9ECD2860DC488 /* Pods-push-notifs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-push-notifs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-push-notifs/Pods-push-notifs.debug.xcconfig"; sourceTree = "<group>"; };
+		898C17F8B8C4A3B0AE0F287F /* Pods_push_notifs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_push_notifs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D9C09AA8A9AEDE5CA2B469 /* Pods-push-notifs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-push-notifs.release.xcconfig"; path = "Pods/Target Support Files/Pods-push-notifs/Pods-push-notifs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69289EDF6B083F7DF2EAFE5B /* Pods_push_notifs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5AB6FE621E2813BF00BBD32F /* push-notifs */,
 				5AB6FE611E2813BF00BBD32F /* Products */,
+				5CD09923A4E045DBD9617A67 /* Pods */,
+				B703390CF1C8DC091B9FCD8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = "push-notifs";
 			sourceTree = "<group>";
 		};
+		5CD09923A4E045DBD9617A67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				791643909AA9ECD2860DC488 /* Pods-push-notifs.debug.xcconfig */,
+				A2D9C09AA8A9AEDE5CA2B469 /* Pods-push-notifs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B703390CF1C8DC091B9FCD8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				898C17F8B8C4A3B0AE0F287F /* Pods_push_notifs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AB6FE751E2813BF00BBD32F /* Build configuration list for PBXNativeTarget "push-notifs" */;
 			buildPhases = (
+				32FCB6A6E99AB33E16CDA819 /* [CP] Check Pods Manifest.lock */,
 				5AB6FE5C1E2813BF00BBD32F /* Sources */,
 				5AB6FE5D1E2813BF00BBD32F /* Frameworks */,
 				5AB6FE5E1E2813BF00BBD32F /* Resources */,
+				1DEF0A9C181708E2FD3B034C /* [CP] Embed Pods Frameworks */,
+				59AE3D6B505B890608731234 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEF0A9C181708E2FD3B034C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-push-notifs/Pods-push-notifs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32FCB6A6E99AB33E16CDA819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59AE3D6B505B890608731234 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-push-notifs/Pods-push-notifs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AB6FE5C1E2813BF00BBD32F /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		5AB6FE761E2813BF00BBD32F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791643909AA9ECD2860DC488 /* Pods-push-notifs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y967H2EAMT;
@@ -280,6 +356,7 @@
 		};
 		5AB6FE771E2813BF00BBD32F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D9C09AA8A9AEDE5CA2B469 /* Pods-push-notifs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y967H2EAMT;
